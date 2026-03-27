@@ -1,0 +1,192 @@
+// ===== IMPORT =====
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+// CUSTOM BOOTSTRAP VARIABLES
+$primary: #2563eb;
+$success: #10b981;
+$dark: #0f172a;
+$light: #f8fafc;
+
+// IMPORT BOOTSTRAP
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// ===== GLOBAL =====
+body {
+  font-family: 'Inter', sans-serif;
+  background: $light;
+}
+
+// ===== HEADER =====
+.main-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+// ===== CARD =====
+.card {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+// ===== PROGRAM =====
+.program-card {
+  h5 {
+    font-weight: 600;
+  }
+}
+
+.program-info {
+  .section-title {
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  strong {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #6b7280;
+  }
+}
+
+// ===== TAG =====
+.tag {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+// ===== STIPEND =====
+.stipend-box {
+  background: #ecfdf5;
+  border: 1px solid $success;
+  border-radius: 8px;
+  padding: 12px;
+  color: #065f46;
+}
+
+// ===== RIGHT PANEL =====
+.unlock-box {
+  text-align: center;
+
+  p {
+    color: #6b7280;
+  }
+}
+
+// ===== FOOTER =====
+.footer-section {
+  background: $dark;
+  color: white;
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p, li {
+    font-size: 13px;
+    color: #cbd5e1;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 6px;
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  hr {
+    border-color: rgba(255,255,255,0.1);
+  }
+}
+.program-card {
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  background: #fff;
+
+  .program-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .program-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+    color: #6b7280;
+
+    .visit-link {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .program-status {
+    margin-top: 5px;
+
+    .status-badge {
+      background: #e6f4ea;
+      color: #1e7e34;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}
+
+// ===== LOGO GRADMAP =====
+.logo {
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  .logo-icons {
+    gap: 2px;           // Độ sát giữa các icon (thử 1px hoặc 3px nếu cần)
+  }
+
+  .logo-text {
+    font-size: 29px;           // Kích thước chữ
+    font-weight: 700;
+    color: #172640;
+    letter-spacing: -1px;      // Làm chữ đẹp và sát hơn
+    margin-left: 8px;          // Khoảng cách giữa icon và chữ
+    line-height: 1;
+  }
+}
+
+// Responsive trên mobile
+@media (max-width: 576px) {
+  .logo .logo-text {
+    font-size: 24px;
+  }
+  .logo-icons {
+    gap: 1px;
+  }
+}
+
