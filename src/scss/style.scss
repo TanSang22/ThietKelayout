@@ -1,5 +1,5 @@
 // ===== IMPORT =====
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 // CUSTOM BOOTSTRAP VARIABLES
 $primary: #2563eb;
@@ -167,15 +167,19 @@ body {
   }
 
   .logo-icons {
-    gap: 2px;           // Độ sát giữa các icon (thử 1px hoặc 3px nếu cần)
+    gap: 0px;
+    display: flex;
+    align-items: baseline;
+    line-height: 1;
+        
   }
 
   .logo-text {
-    font-size: 29px;           // Kích thước chữ
+    font-size: 16px;          
     font-weight: 700;
     color: #172640;
-    letter-spacing: -1px;      // Làm chữ đẹp và sát hơn
-    margin-left: 8px;          // Khoảng cách giữa icon và chữ
+    letter-spacing: 0px;   
+    margin-left: 4px;    
     line-height: 1;
   }
 }
@@ -183,10 +187,10 @@ body {
 // Responsive trên mobile
 @media (max-width: 576px) {
   .logo .logo-text {
-    font-size: 24px;
+    font-size: 14px;
   }
   .logo-icons {
-    gap: 1px;
+    gap: 0px;
   }
 }
 
